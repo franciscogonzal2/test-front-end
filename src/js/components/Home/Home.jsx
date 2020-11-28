@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import  "./Home.scss";
 
-class Form extends Component {
+class Home extends Component {
   constructor() {
     super();
 
@@ -23,18 +23,11 @@ class Form extends Component {
 
   render() {
     return (
-      <form>
-        <input
-          type="text"
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-      </form>
+      <div className="clearData">
+      Hello world
+      </div>
     );
   }
 }
 
-export default Form;
-
-const wrapper = document.getElementById("root");
-wrapper ? ReactDOM.render(<Form />, wrapper) : false;
+export default Home;
